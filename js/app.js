@@ -6,17 +6,17 @@ const letters = document.getElementsByClassName('letter');
 const ul = document.querySelector('#phrase ul');
 const heart = document.getElementsByTagName('img');
 const title = document.querySelector('.title');
-let missed = 0;
 let reset = false;
-
+let missed = 0;
 
 let phrases = [
+	"edomias is the best",
+	"seble konjo",
 	"never say never",
 	"better late than never",
 	"like a fish out of water",
-	"needle in a haystack",
-	"take it with a grain of salt",
-	"think like a boss"
+	"needle in a haystack"
+	
 ]
 
 function getRandomPhraseAsArray(arr) {
@@ -117,9 +117,8 @@ qwerty.addEventListener('click', (event) => {
 		}
 		if(letterFound === false && missed){
            event.target.classList = "wrong";    
-		}else{
-event.target.classList = ('shake , show');
 		}
+		
 	}
 	checkWin();
 
