@@ -27,6 +27,10 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+	background : url(../images/gusse.png) no-repeat center;
+	background-size: contain;
+	background-blend-mode: darken;
+	background-color: darkgray;
 }
 
 li, ol, ul {
@@ -161,25 +165,39 @@ background-color: #FF0000;
 }
 
 .start {
-  background-color: var(--color-start);
+  background : url(../images/lose.png) no-repeat center;
+	background-size: contain;
+	background-blend-mode: darken;
+	background-color: darkgray;
 }
 
 .start a {
-  color: var(--color-win);
+  color: greenyellow;
+	background-color: black;
 }
 
 .win {
-  background-color: var(--color-win);
+  
+	background : url(../images/win.png) no-repeat center ;
+	background-size: contain;
+	background-blend-mode: darken;
+	background-color: green;
 }
 
 .win a {
-  color: var(--color-win);
+ color: greenyellow;
+	background-color: black;
 }
 
 .lose {
-  background-color: var(--color-lose);
+	background : url(../images/start.png) no-repeat center ; 
+	background-size: contain;
+	background-blend-mode: darken;
+	 background-color:darkgray;
 }
 
 .lose a {
-  color: var(--color-lose);
+  color: greenyellow;
+	background-color: black;
+	
 }
