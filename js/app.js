@@ -55,14 +55,14 @@ function checkLetter(btn) {
 function checkWin() {
 	const show = document.querySelectorAll('.show');
 	if (show.length === letters.length) {
-		overlay.style.display = "";
+		overlay.style.display = "block";
 		overlay.className = "win";
 		title.innerHTML = "<h2>You Win!</h2>";
 		resetButton.textContent = "Start Again!";
 		reset = true;
 
 	} else if (missed === 5) {
-		overlay.style.display = "";
+		overlay.style.display = "block";
 		overlay.className = "lose";
 		title.innerHTML = "<h2>Game Over!</h2>";
 		resetButton.textContent = "Start Again!";
