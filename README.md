@@ -1,1 +1,1 @@
-# TTH-Techdegree-project-06
+project-06
